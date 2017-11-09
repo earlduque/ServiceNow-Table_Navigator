@@ -4,6 +4,7 @@
 #IfWinActive, ServiceNow
 
 ^Numpad0::
+	send, { ctrl down } {alt down}f{ ctrl up }{alt up}
 	windows1 := GetTableName(1)
 	windows2 := GetTableName(2)
 	windows3 := GetTableName(3)
@@ -123,46 +124,55 @@ LaunchEdit:
 	return
 
 LaunchEdit1:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName1
 	reload
 	return
 LaunchEdit2:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName2
 	reload
 	return
 LaunchEdit3:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName3
 	reload
 	return
 LaunchEdit4:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName4
 	reload
 	return
 LaunchEdit5:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName5
 	reload
 	return
 LaunchEdit6:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName6
 	reload
 	return
 LaunchEdit7:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName7
 	reload
 	return
 LaunchEdit8:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName8
 	reload
 	return
 LaunchEdit9:
+	Gui Destroy
 	InputBox, NewShortcut, Edit Shortcut, Please type the new shortcut below.`n`nExample:`nincident.list will load the incident table`nincident.do will start a new record on the incident table
 	IniWrite, %NewShortcut%, %A_ScriptDir%\SNTableNav.ini, TableNames, TableName9
 	reload
